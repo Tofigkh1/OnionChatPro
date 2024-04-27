@@ -145,5 +145,10 @@ border: none;
   background-size: 52px;
   border: none;
   }
+
+  .ce-chat-list-mobile-option{
+   display: block;
+   width: 200px;
+  }
   
 }

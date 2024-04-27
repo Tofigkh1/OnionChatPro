@@ -205,4 +205,8 @@ border: none;
    .google:hover {
     transform: scale(1.2);
   }
+
+  .ql-toolbar{
+    margin-bottom: 30px;
+  }
 }

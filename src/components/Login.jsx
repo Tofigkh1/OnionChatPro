@@ -17,7 +17,7 @@ const Login = () => {
     return (
         <div id="login-page">
             <div id="login-card">
-                <h2>Welcome to OnionChat!</h2>
+                <h2>Welcome to OnioChat!</h2>
                 <div className="login-button google" onClick={handleGoogleLogin}>
                     <GoogleOutlined /> Sign In with Google
                 </div>

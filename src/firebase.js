@@ -1,4 +1,4 @@
-// Firebase modüllerini tek tek import etmek
+
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
@@ -12,10 +12,9 @@ const firebaseConfig = {
   appId: "1:309019941005:web:9921ea9f25efdad6f7eac4"
 };
 
-// Firebase uygulamasını başlat
 const app = initializeApp(firebaseConfig);
 
-// Auth servisini al
+
 const auth = getAuth(app);
 
 export { auth };

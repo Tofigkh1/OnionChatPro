@@ -1,4 +1,8 @@
 /* Global */
+body{
+  background-image: url('./assets/oniologo.png');
+  background-size: 100%;
+}
 
 * {
   font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -19,9 +23,8 @@
 .nav-bar {
   width: 100%;
   height: 66px;
-  background-color: #002766;
+  background-color: #d011ca;
 }
-
 .logo-tab {
   position: absolute;
   left: 22px;
@@ -47,7 +50,6 @@
 /* Login Page */
 
 #login-page {
-  background-image: linear-gradient(#40a9ff, #096dd9);
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -57,16 +59,18 @@
 
 #login-card {
   position: relative;
-  top: calc(50vh - 144px);
-  left: calc(50vw - 210px);
+  /* top: calc(50vh - 144px);
+  left: calc(50vw - 210px); */
   padding-top: 36px;
   padding-bottom: 66px;
-  width: 420px;
+  width: 520px;
   text-align: center;
-  background-color: white;
+  background-color: #e1e1e1;
   border-radius: 22px;
+  margin-top: 140px;
+  margin-left: 520px;
+ font-size: large;
 }
-
 .login-button {
   cursor: pointer;
   color: white;
@@ -98,4 +102,34 @@
   position: relative;
   left: calc(50vw - 33px);
   top: calc(50vh - 22px);
+}
+
+@media (max-width: 900px) {
+  body {
+    background-image: url('./assets/oniologo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #login-card {
+    position: relative;
+    /* top: calc(50vh - 144px);
+    left: calc(50vw - 210px); */
+    padding-top: 36px;
+    padding-bottom: 66px;
+    width: 350px;
+    text-align: center;
+    background-color: #e1e1e1;
+    border-radius: 22px;
+    margin-top: 140px;
+    margin-left: 40px;
+   font-size: large;
+  }
+  
+  
 }

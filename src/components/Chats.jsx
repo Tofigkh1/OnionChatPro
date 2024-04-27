@@ -61,7 +61,10 @@ const Chats = () => {
     return (
         <div className="chats-page">
             <div className="nav-bar">
-                <div className="logo-tab">Unichat</div>
+                <div className="logo-tab">
+                <img style={{width: "50px"}} src="https://cryptologos.cc/logos/chatcoin-chat-logo.png" alt="" />
+                    OnionChat
+                </div>
                 <div onClick={handleLogout} className="logout-tab">Logout</div>
             </div>
             <ChatEngine 

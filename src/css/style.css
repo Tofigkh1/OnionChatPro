@@ -1,0 +1,36 @@
+.btn1{
+    background-image: url("../assets/microphone-icon-5049.png");
+    background-size: cover;
+    background-color: #ffffff;
+    position: fixed;
+  top: 692px; /* Yukarıdan 20px mesafede */
+   /* Sağdan 20px mesafede */
+  z-index: 9999; /* Diğer içeriklerin üzerinde */
+margin-right: 200px;
+  border-radius: 15px;
+  width: 48px;
+  height: 34px;
+
+}
+
+
+
+
+@media (max-width: 900px) {
+    .btn1{
+        background-image: url("../assets/microphone-icon-5049.png");
+        background-size: cover;
+        background-color: #ffffff;
+        position: fixed;
+      top: 710px; /* Yukarıdan 20px mesafede */
+       /* Sağdan 20px mesafede */
+      z-index: 9999; /* Diğer içeriklerin üzerinde */
+    
+      margin-left: 12px;
+      border-radius: 15px;
+      width: 15px;
+      height: 33px;
+    
+    }
+    
+    }

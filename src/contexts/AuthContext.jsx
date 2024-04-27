@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, Children } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { auth } from '../firebase';
 
@@ -12,12 +12,16 @@ export const AuthProvider = ({ children }) => {
     const history = useHistory();
 
     useEffect(() => {
-        auth.onAuthStateChanged((user) => {
+        const unsubscribe = auth.onAuthStateChanged((user) => {
             setUser(user);
             setLoading(false);
-            if(user) history.push('/chats');
-        })
-    }, [user, history]);
+            if (user) {
+                history.push('/chats');
+            }
+        });
+
+        return unsubscribe;
+    }, [history]);
 
     const value = { user };
 
@@ -25,6 +29,5 @@ export const AuthProvider = ({ children }) => {
         <AuthContext.Provider value={value}>
              {!loading && children}
         </AuthContext.Provider>
-    )
-}
-
+    );
+};

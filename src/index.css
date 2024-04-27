@@ -31,15 +31,19 @@ body{
   top: 12px;
   font-size: 32px;
   font-weight: 700;
+
   color: white;
 }
 
 .logout-tab {
   position: absolute;
-  top: 22px;
-  right: 22px;
-  color: white;
+  top: 12px;
+  right: 28px;
+ 
   cursor: pointer;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/5542/5542821.png");
+background-size: 52px;
+border: none;
 }
 
 ::-webkit-scrollbar {
@@ -131,5 +135,15 @@ body{
    font-size: large;
   }
   
+  .logout-tab {
+    position: absolute;
+    top: 13px;
+    right: 22px;
+   
+    cursor: pointer;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/5542/5542821.png");
+  background-size: 52px;
+  border: none;
+  }
   
 }

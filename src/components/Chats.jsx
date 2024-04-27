@@ -65,7 +65,7 @@ const Chats = () => {
                 <img style={{width: "50px"}} src="https://cryptologos.cc/logos/chatcoin-chat-logo.png" alt="" />
                     OnionChat
                 </div>
-                <div onClick={handleLogout} className="logout-tab">Logout</div>
+                <div style={{width: "50px", height: "50px",}}  onClick={handleLogout} className="logout-tab"></div>
             </div>
             <ChatEngine 
                 height="calc(100vh - 66px)"

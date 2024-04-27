@@ -185,9 +185,9 @@ border: none;
   .logout-tab:hover{
     transform: scale(1.3);
   }
-  /* .ce-chat-feed{
+  .ce-chat-feed{
     font-size: 16px;
-  } */
+  }
 
   .facebook {
     transition: transform 0.3s ease-in-out;

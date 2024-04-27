@@ -169,13 +169,15 @@ border: none;
    
     cursor: pointer;
     background-image: url("https://cdn-icons-png.flaticon.com/128/5542/5542821.png");
-  background-size: 52px;
+  background-size: 48px;
   border: none;
   transition: transform 0.3s ease-in-out;
   }
 
   .logo-img{
     transition: transform 0.3s ease-in-out;
+   
+
   }
 
   .logo-img:hover{
@@ -207,6 +209,11 @@ border: none;
   }
 
   .ql-toolbar{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
+
+  .ce-send-button-container{
+    margin-bottom: 15px;
+  }
+
 }

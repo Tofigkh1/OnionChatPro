@@ -62,7 +62,7 @@ const Chats = () => {
         <div className="chats-page">
             <div className="nav-bar">
                 <div className="logo-tab">
-                <img className="logo-img" style={{width: "50px"}} src="https://cdn-icons-png.flaticon.com/128/9862/9862030.png" alt="" />
+                <img className="logo-img" style={{width: "45px"}} src="https://cdn-icons-png.flaticon.com/128/9862/9862030.png" alt="" />
                     OnionChat
                 </div>
                 <div style={{width: "50px", height: "50px",}}  onClick={handleLogout} className="logout-tab"></div>

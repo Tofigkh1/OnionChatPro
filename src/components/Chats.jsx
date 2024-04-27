@@ -11,8 +11,8 @@ const Chats = () => {
     const [loading, setLoading] = useState(true);
 
     const handleLogout = async () => {
-        await auth.signOut();
-        history.push('/');
+        await auth?.signOut();
+        history?.push('/');
     };
 
     const getFile = async (url) => {
@@ -23,13 +23,13 @@ const Chats = () => {
 
     useEffect(() => {
         if (!user) {
-            history.push('/');
+            history?.push('/');
             return;
         }
 
         axios.get('https://api.chatengine.io/users/me', {
             headers: {
-                "project-id": "4ad98ba9-e705-45a8-a42c-a2a8b8c4bf12",
+                "project-id": "bd1d5a03-5b1b-47e8-a5ca-1e2b809ee8bb",
                 "user-name": user.email,
                 "user-secret": user.uid,
             }
@@ -39,16 +39,16 @@ const Chats = () => {
         })
         .catch(() => {
             let formdata = new FormData();
-            formdata.append('email', user.email);
-            formdata.append('username', user.email);
-            formdata.append('secret', user.uid);
+            formdata?.append('email', user.email);
+            formdata?.append('username', user.email);
+            formdata?.append('secret', user.uid);
 
             getFile(user.photoURL)
             .then((avatar) => {
-                formdata.append('avatar', avatar, avatar.name);
-                axios.post('https://api.chatengine.io/users/',
+                formdata?.append('avatar', avatar, avatar.name);
+                axios?.post('https://api.chatengine.io/users/',
                     formdata,
-                    { headers: { "private-key": "e576ae90-4eba-4196-a26a-9a9dcb60f812" } }
+                    { headers: { "private-key": "e6f56002-99cd-4c8a-8e14-df323bf23768" } }
                 )
                 .then(() => setLoading(false))
                 .catch((error) => console.log(error));
@@ -62,14 +62,14 @@ const Chats = () => {
         <div className="chats-page">
             <div className="nav-bar">
                 <div className="logo-tab">
-                <img style={{width: "50px"}} src="https://cdn-icons-png.flaticon.com/128/2923/2923216.png" alt="" />
+                <img style={{width: "50px"}} src="https://cdn-icons-png.flaticon.com/128/9862/9862030.png" alt="" />
                     OnionChat
                 </div>
                 <div style={{width: "50px", height: "50px",}}  onClick={handleLogout} className="logout-tab"></div>
             </div>
             <ChatEngine 
                 height="calc(100vh - 66px)"
-                projectID="4ad98ba9-e705-45a8-a42c-a2a8b8c4bf12"
+                projectID="bd1d5a03-5b1b-47e8-a5ca-1e2b809ee8bb"
                 userName={user.email}
                 userSecret={user.uid}
             />

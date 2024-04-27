@@ -74,7 +74,27 @@ border: none;
   margin-top: 140px;
   margin-left: 520px;
  font-size: large;
+ transition: transform 0.3s ease-in-out;
 }
+#login-card:hover{
+  transform: scale(1.2);
+}
+
+.facebook {
+  transition: transform 0.3s ease-in-out;
+}
+.facebook:hover {
+  transform: scale(1.2);
+}
+
+.google {
+  transition: transform 0.3s ease-in-out;
+}
+
+ .google:hover {
+  transform: scale(1.2);
+}
+
 .login-button {
   cursor: pointer;
   color: white;
@@ -85,11 +105,13 @@ border: none;
 
 .facebook {
   background-color: #3b5998;
+  width: 220px;
 }
 
 .google {
   background-color: #4285f4;
   color: white;
+  width: 220px;
 }
 
 #loading-container {
@@ -169,16 +191,18 @@ border: none;
 
   .facebook {
     transition: transform 0.3s ease-in-out;
+    width: 220px;
   }
   .facebook:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   
   .google {
     transition: transform 0.3s ease-in-out;
+    width: 220px;
   }
 
    .google:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 }

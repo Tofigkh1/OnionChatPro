@@ -189,6 +189,8 @@ border: none;
   }
   .ce-chat-feed{
     font-size: 16px;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .facebook {
@@ -209,11 +211,11 @@ border: none;
   }
 
   .ql-toolbar{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .ce-send-button-container{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
 }
